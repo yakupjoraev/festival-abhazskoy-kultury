@@ -1,0 +1,191 @@
+.how {
+
+  // .how__inner
+
+  &__inner {}
+
+  // .how__title
+
+  &__title {
+    margin-bottom: 72px;
+
+    @media (max-width: $breakpoint992) {
+      margin-bottom: 45px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 25px;
+    }
+  }
+
+  // .how__slider-container
+
+  &__slider-container {
+    position: relative;
+    max-width: 1480px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 60px;
+    margin-bottom: 100px;
+
+    @media (max-width: $breakpoint992) {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      max-width: 100%;
+      padding: 0;
+      margin-bottom: 60px;
+
+      & .container {
+        padding: 0;
+      }
+    }
+  }
+
+  // .how__slider
+
+  &__slider {}
+
+  // .how__slider-wrapper
+
+  &__slider-wrapper {}
+
+  // .how__slide
+
+  &__slide {
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  // .how__arrows
+
+  &__arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 97%;
+    left: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint992) {
+      width: 95%;
+    }
+
+    @media (max-width: $breakpoint768) {
+      display: none;
+    }
+  }
+
+  // .how__arrow
+
+  &__arrow {
+    cursor: pointer;
+  }
+
+  // .how__arrow--prev
+
+  &__arrow--prev {
+    // left: -40px;
+  }
+
+  // .how__arrow--next
+
+  &__arrow--next {
+    // right: 0;
+  }
+
+  // .how__festivals
+
+  &__festivals {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    column-gap: 40px;
+
+    @media (max-width: $breakpoint992) {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0 60px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 60px;
+      justify-items: center;
+      padding: 0;
+      text-align: center;
+    }
+  }
+
+  // .how__festival
+
+  &__festival {}
+
+  // .how__festival-name
+
+  &__festival-name {
+    color: #101010;
+    font-size: 40px;
+
+    @media (max-width: $breakpoint992) {
+      font-size: 30px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 25px;
+    }
+  }
+
+  // .how__festival-data
+
+  &__festival-data {
+    margin-bottom: 20px;
+    color: #101010;
+    font-size: 40px;
+
+    @media (max-width: $breakpoint992) {
+      font-size: 30px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 25px;
+    }
+  }
+
+  // .how__festival-link
+
+  &__festival-link {
+    color: #005727;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    @media (max-width: $breakpoint992) {
+      position: static;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 20px;
+      width: fit-content;
+      border: 1px solid #005727;
+      border-radius: 5px;
+
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 130%;
+    }
+
+    @media (max-width: $breakpoint768) {
+      margin: 0 auto;
+    }
+  }
+}

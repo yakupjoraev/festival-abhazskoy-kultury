@@ -1,0 +1,154 @@
+.map {
+
+  // .map__inner
+
+  &__inner {
+    position: relative;
+  }
+
+  // .map__header
+
+  &__header {}
+
+  // .map__title
+
+  &__title {
+    margin-bottom: 55px;
+
+    @media (max-width: $breakpoint992) {
+      margin-bottom: 45px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 25px;
+    }
+  }
+
+  // .map__content
+
+  &__content {}
+
+  // .map__picture
+
+  &__picture {
+    margin-bottom: 60px;
+
+    img {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    @media (max-width: $breakpoint992) {
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 30px;
+    }
+  }
+
+  // .map__list
+
+  &__list {
+    column-count: 3;
+
+    @media (max-width: $breakpoint992) {
+      column-count: 2;
+      margin-bottom: 40px;
+      padding: 0 80px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      column-count: 1;
+      padding: 0 24px;
+    }
+  }
+
+  // .map__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    row-gap: 10px;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  // .map__item-count
+
+  &__item-count {
+    color: #DC2C24;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.32px;
+
+    @media (max-width: $breakpoint992) {
+      font-size: 14px;
+      line-height: 110%;
+      letter-spacing: normal;
+    }
+
+  }
+
+  // .map__item-text
+
+  &__item-text {
+    color: #101010;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.32px;
+
+    @media (max-width: $breakpoint992) {
+      font-size: 14px;
+      line-height: 110%;
+      letter-spacing: -0.28px;
+    }
+
+  }
+
+  // .map__downloud
+
+  &__downloud {
+    position: absolute;
+    top: 130px;
+    right: 0;
+
+    color: #005727;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    @media (max-width: $breakpoint992) {
+      position: static;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      padding: 10px 20px;
+      width: fit-content;
+      border: 1px solid #005727;
+      border-radius: 5px;
+
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 130%;
+    }
+
+  }
+}
