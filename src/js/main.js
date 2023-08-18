@@ -9,18 +9,24 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const toggleButtons = document.querySelectorAll(".toggle-button");
+  const membersItems = document.querySelectorAll(".members__item");
 
-  toggleButtons.forEach(button => {
-    button.addEventListener("click", function () {
-      const textBlock = this.previousElementSibling;
+  membersItems.forEach(item => {
+    const toggleButton = item.querySelector(".toggle-button");
+    const textBlock = item.querySelector(".members__item-text");
+
+    item.addEventListener("click", function () {
+      this.classList.toggle("more");
       textBlock.classList.toggle("more");
 
-      if (textBlock.classList.contains("more")) {
-        this.textContent = "Свернуть";
-      } else {
-        this.textContent = "Подробнее";
+      if (textBlock) {
+        if (textBlock.classList.contains("more")) {
+          toggleButton.textContent = "Свернуть";
+        } else {
+          toggleButton.textContent = "Подробнее";
+        }
       }
     });
+
   });
 });

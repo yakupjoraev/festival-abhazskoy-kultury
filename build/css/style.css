@@ -576,6 +576,15 @@ body.locked {
   line-clamp: initial;
 }
 
+.members__item.more .members__item-texts {
+  max-height: none;
+  -o-text-overflow: initial;
+     text-overflow: initial;
+  -ms-line-clamp: initial;
+  -webkit-line-clamp: initial;
+  line-clamp: initial;
+}
+
 .toggle-button {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -27,6 +27,15 @@
   line-clamp: initial;
 }
 
+.members__item.more {
+  .members__item-texts {
+    max-height: none;
+    text-overflow: initial;
+    -ms-line-clamp: initial;
+    -webkit-line-clamp: initial;
+    line-clamp: initial;
+  }
+}
 
 .toggle-button {
   display: flex;
