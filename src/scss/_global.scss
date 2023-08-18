@@ -70,16 +70,16 @@ body {
 }
 
 .main-title__big {
-  margin-bottom: -20px;
+  margin-bottom: -24px;
   font-size: 172px;
 
   @media (max-width: $breakpoint992) {
-    margin-bottom: -17px;
+    margin-bottom: -20px;
     font-size: 140px;
   }
 
   @media (max-width: $breakpoint768) {
-    margin-bottom: -12px;
+    margin-bottom: -15px;
     font-size: 100px;
   }
 }
